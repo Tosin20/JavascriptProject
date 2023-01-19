@@ -1,0 +1,76 @@
+#message {
+  padding-top: 40px;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#container {
+  width: 100%;
+}
+
+#two {
+  display: flex;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  line-height: 20px;
+}
+
+.completed {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#completed {
+  color: grey;
+  font-size: 25px;
+}
+.new-task {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn,
+.done-btn,
+.delete-btn {
+  cursor: pointer;
+  margin: 8px 0 0;
+  font-size: 15px;
+  border: none;
+  padding: 8px;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.delete-btn,
+.done-btn {
+  justify-content: space-around;
+}
+
+.add-btn {
+  background-color: blue;
+  width: 60px;
+  height: 45px;
+}
+
+.done-btn {
+  background-color: green;
+}
+
+.delete-btn {
+  background-color: red;
+}

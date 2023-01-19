@@ -1,25 +1,25 @@
-const increaseBtn = document.querySelector(".increase");
-const decreaseBtn = document.querySelector(".decrease");
+const increasebutton = document.querySelector(".increase");
+const decreasebutton = document.querySelector(".decrease");
 const timer = document.getElementById("time");
 
-let currentValue = 0;
+let counter = 0;
 
-function increaseTimer(event) {
+function increaseTime(event) {
   event.preventDefault();
-  //   currentValue = currentValue + 1;
-  //   currentValue += 1;
-  currentValue++;
 
-  timer.textContent = currentValue;
+  counter++;
+
+  timer.textContent = counter;
+
+  // console.log(counter);
 }
 
-function decreaseTimer(event) {
+function decreaseTime(event) {
   event.preventDefault();
-  // currentValue = currentValue - 1;
-  currentValue--;
+  counter--;
 
-  timer.textContent = currentValue;
+  timer.textContent = counter;
 }
 
-increaseBtn.addEventListener("click", increaseTimer);
-decreaseBtn.addEventListener("click", decreaseTimer);
+increasebutton.addEventListener("click", increaseTime);
+decreasebutton.addEventListener("click", decreaseTime);
