@@ -1,0 +1,26 @@
+#container {
+  width: 100%;
+}
+
+#content,
+#button {
+  text-align: center;
+  padding-top: 30px;
+}
+
+q {
+  font-size: 50px;
+  font-style: italic;
+}
+
+button {
+  color: white;
+  background-color: blue;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
