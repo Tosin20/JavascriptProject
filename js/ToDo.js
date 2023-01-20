@@ -10,12 +10,14 @@ totalTask.textContent = `Total task (${taskNumber})`;
 
 function addButton(event) {
   event.preventDefault();
-
+  if (input.value == null || input.value == "") {
+    alert("You must write something!");
+    return;
+  }
   taskNumber++;
+  totalTask.textContent = `Total task (${taskNumber})`;
 
   createTask();
-
-  totalTask.textContent = `Total task (${taskNumber})`;
 
   clear();
 }
@@ -26,8 +28,12 @@ function createTask() {
 
   const list = document.createElement("div");
   const para = document.createElement("p");
-  para.textContent = new Date();
+
+  const date = new Date().toString();
+  console.log(date.split("G"));
+  para.textContent = date.split("G")[0];
   para.setAttribute("id", "date-time");
+  
   const label = document.createElement("label");
   label.setAttribute("id", "task");
   label.textContent = input.value;
